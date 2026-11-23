@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      window.addEventListener(
+        'error',
+        function (e) {
+          if (
+            e &&
+            typeof e.message === 'string' &&
+            (e.message.indexOf('ResizeObserver loop completed with undelivered notifications') !== -1 ||
+              e.message.indexOf('ResizeObserver loop limit exceeded') !== -1)
+          ) {
+            e.stopImmediatePropagation();
+            e.preventDefault();
+          }
+        },
+        true
+      );
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thinker — Discord Server Developer & Creator Guide</title>
+    <meta name="description" content="Portfolio, project presentations, customization studio, reviews, and analytics portal for Thinker, Discord Server Developer & Creator Guide." />
+    <meta property="og:title" content="Thinker — Discord Server Developer & Creator Guide" />
+    <meta property="og:description" content="Portfolio, project presentations, customization studio, reviews, and analytics portal for Thinker, Discord Server Developer & Creator Guide." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

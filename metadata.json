@@ -1,0 +1,6 @@
+{
+  "name": "Thinker — Discord Server Developer & Creator Guide",
+  "description": "Portfolio, project presentations, customization studio, reviews, and analytics portal for Thinker, Discord Server Developer & Creator Guide.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
